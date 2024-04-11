@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     .hi{
+        padding: 10px;
+        background-color: black;
+        width: 30%;
+        text-align: center;
+        color: white;
+        font-size: 50px;
+        margin-top: 250px;
+        margin-left: 550px;
+    } 
+    .by{
+        padding: 10px;
+        background-color: black;
+        width: 30%;
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        /* margin-top: 250px; */
+        margin-left: 550px;
+    } 
+    .hlo{
+        text-align: center;
+        font-size: 50px;
+    }
+    
+
+    
+</style>
+<body>
+    <h1 class="hlo">DIGITAL WATCH</h1>
+
+    <div class="hi">
+    </div>
+    <div class="by">
+
+    </div>
+    <script>
+        let d=new Date();
+        let hour=d.getHours();
+        let day=d.getDay();
+        let minute=d.getMinutes();
+        let seconds=d.getSeconds();
+        document.querySelector('.hi').innerHTML= hour  + ":" + minute + ":" + seconds 
+        
+         let time=()=>{
+            let d=new Date();
+                document.querySelector('.hi').innerHTML=(d.toLocaleTimeString());
+                document.querySelector('.by').innerHTML=(d.toDateString());
+               }
+                let interval=setInterval(time,1000)
+        
+    </script>
+    
+</body>
+</html>

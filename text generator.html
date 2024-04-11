@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="text1" id="text1" placeholder="enter text">
+    <p id="show"></p>
+    <button onclick=" textgenerator()">click</button>
+<script>
+   let str=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, magni ratione. Cum repellat tempore dolore beatae magni optio aliquam qui aut rerum. Vitae inventore omnis commodi! Blanditiis odio in, illum laboriosam autem facilis error omnis quibusdam nam saepe rem expedita eaque ad facere pariatur, necessitatibus unde perferendis reprehenderit eius enim repellat cum doloremque! Ipsum, qui dolorem sequi assumenda molestias soluta tempora. Consequuntur quaerat deserunt dolor ullam unde, recusandae odit ipsa? A doloremque earum corporis voluptate sit pariatur velit nulla repellat porro nemo! Vero quae facilis deleniti maiores aliquam ad ipsa fugiat alias, ex impedit, tenetur quasi tempora molestias recusandae sunt non delectus nulla quidem nam, facere fuga? Velit aut excepturi veniam ad beatae animi ex praesentium. Exercitationem accusamus delectus eius aliquam ad facilis placeat officiis quasi animi est labore dolore obcaecati, ex nesciunt hic consequatur sed maxime odit repellat nam incidunt sit illum libero quidem. Repudiandae quasi molestias accusantium assumenda sapiente reprehenderit. Excepturi odio voluptatem delectus. Ipsum possimus labore, totam dicta deleniti quia vitae ab nam laudantium ad odio et, commodi reprehenderit in? Iusto, assumenda ipsam numquam adipisci delectus dolor ea blanditiis. Deserunt enim, repellendus obcaecati eveniet reiciendis voluptatibus sapiente numquam ipsum exercitationem rem suscipit ex odit pariatur sed. Quaerat."
+//    console.log(str)
+
+   function textgenerator(){
+    let a=document.getElementById("text1").value;
+    var b=str.split(" ");
+    // console.log(b)
+    let d=b.slice(0,a);
+    let j=d.join(" ");
+    
+    
+    document.getElementById("show").innerHTML=j
+   }
+   </script>
+
+    
+</body>
+</html>
